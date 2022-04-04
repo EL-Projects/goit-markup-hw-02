@@ -16,7 +16,7 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <a class="header-logo" href="./index.html"
+      <a class="logo" href="./index.html"
         ><span class="logo-blue">Web</span
         ><span class="logo-black">Studio</span></a
       >
@@ -33,45 +33,47 @@
           </li>
         </ul>
       </nav>
-      <ul>
+      <ul class="header-contact-list">
         <li class="header-mail">
           <a class="header-contact-link" href="mailto:">info@devstudio.com</a>
         </li>
         <li class="header-tel">
-          <a class="header-contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="header-contact-link" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
         </li>
       </ul>
     </header>
     <main>
       <!-- Button section -->
-      <section>
+      <section class="portfolio">
         <h1 hidden class="portfolio-main">Выбор</h1>
-        <ul>
-          <li class="portfolio-button-list">
-            <button class="portfolio-main-button" type="button">Все</button>
+        <ul class="portfolio-button-list">
+          <li class="portfolio-button-item">
+            <button class="portfolio-button" type="button">Все</button>
           </li>
-          <li>
-            <button class="portfolio-main-button" type="button">
+          <li class="portfolio-button-item">
+            <button class="portfolio-button" type="button">
               Веб-сайты
             </button>
           </li>
-          <li>
-            <button class="portfolio-main-button" type="button">
+          <li class="portfolio-button-item">
+            <button class="portfolio-button" type="button">
               Приложения
             </button>
           </li>
-          <li>
-            <button class="portfolio-main-button" type="button">Дизайн</button>
+          <li class="portfolio-button-item">
+            <button class="portfolio-button" type="button">Дизайн</button>
           </li>
-          <li>
-            <button class="portfolio-main-button" type="button">
+          <li class="portfolio-button-item">
+            <button class="portfolio-button" type="button">
               Маркетинг
             </button>
           </li>
         </ul>
       </section>
       <!-- Photo section -->
-      <section>
+      <section class="portfolio-images">
         <h2 hidden class="portfolio-head">Фильтр</h2>
         <ul class="portfolio-list">
           <li class="portfolio-item">
@@ -147,7 +149,7 @@
       <address class="footer-contact">
         <ul class="footer-contact-list">
           <li class="footer-contact-adress">
-            <a 
+            <a
               class="footer-contact-link"
               href="https://goo.gl/maps/WrcRyUVtfEpf5qSH7"
               target="_blank"
