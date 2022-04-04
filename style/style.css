@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
+  background-color: #ffffff;
 }
 .list {
   list-style: none;
@@ -9,15 +10,30 @@ body {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 :root {
-  --header-color: #212121;
   --text-color: #757575;
-  --selection-color: #2196f3;
+  --accent-color: #2196f3;
+}
+.btn {
+  cursor: pointer;
 }
 /* Header */
 
 .logo-blue {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -26,7 +42,7 @@ body {
   color: #2196f3;
 }
 .logo-black {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -45,7 +61,7 @@ body {
 
 .header-link:hover,
 .header-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .header-contact-link {
@@ -53,11 +69,11 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--text-color);
 }
 .header-contact-link:hover,
 .header-contact-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Main */
@@ -85,8 +101,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background: #2196f3;
-  cursor: pointer;
+  background-color: #2196f3;
 }
 .main-button:hover,
 .main-button:focus {
@@ -101,15 +116,13 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
 }
 
 .hero-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 
 /* About */
@@ -119,10 +132,12 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 
 /* Masters */
+.masters {
+  background-color: #f5f4fa;
+}
 
 .masters-head {
   font-weight: 700;
@@ -130,7 +145,6 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .masters-name {
@@ -139,7 +153,6 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .masters-speciality {
@@ -148,16 +161,16 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
-
 /* Footer */
+
 .footer {
   background: #2f303a;
 }
 
 .logo-white {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -167,6 +180,7 @@ body {
 }
 
 .footer-contact-link {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -188,7 +202,6 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
   background-color: #f5f4fa;
 }
 .portfolio-button:hover,
@@ -209,7 +222,6 @@ body {
 }
 
 .portfolio-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
