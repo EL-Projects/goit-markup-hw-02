@@ -1,179 +1,217 @@
-/* Lists without dots */
-.hero-list,
-.about-list,
-.footer-contact-list,
-.masters-list,
-.portfolio-button-list,
-.portfolio-list {
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+.list {
   list-style: none;
 }
-
-.portfolio-main {
-  background-color: #e5e5e5;
-}
-/* Logo */
-
-a {
+.link {
   text-decoration: none;
 }
 
+:root {
+  --header-color: #212121;
+  --text-color: #757575;
+  --selection-color: #2196f3;
+}
+/* Header */
+
 .logo-blue {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: #2196f3;
-  font-style: normal;
 }
 .logo-black {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: #212121;
-  font-style: normal;
-}
-.logo-white {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  color: #ffffff;
-  font-style: normal;
-}
-/* .header-nav { */
-.header-list,
-.header-contact-list {
-  list-style: none;
 }
 
-/* Header */
-.header-item,
-.header-link,
-.header-contact-link {
-  font-family: "Roboto", sans-serif;
+.header-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
-  color: #212121;
+  line-height: 1.14;
   letter-spacing: 0.02em;
+  color: #212121;
 }
+
 .header-link:hover,
-.header-contact-link:hover {
+.header-link:focus {
+  color: #2196f3;
+}
+
+.header-contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.header-contact-link:hover,
+.header-contact-link:focus {
   color: #2196f3;
 }
 
 /* Main */
-
 .main {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 60px;
-  color: #ffffff;
   background: #2f303a;
-  list-style: none;
 }
+
+.main-head {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .main-button {
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
+  cursor: pointer;
 }
-/* Hero */
-.hero-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  color: #212121;
-}
-.hero-text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #757575;
-}
-.about-head {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  color: #212121;
-}
-.masters-head {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  color: #212121;
-}
-.masters-name {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #212121;
-}
-.masters-speciality {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #757575;
-}
-/* Footer */
-.footer-logo {
-  text-decoration: none;
+.main-button:hover,
+.main-button:focus {
+  background-color: #188ce8;
 }
 
+/* Hero */
+
+.hero-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.hero-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* About */
+.about-head {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+/* Masters */
+
+.masters-head {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.masters-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.masters-speciality {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* Footer */
 .footer {
   background: #2f303a;
 }
-.footer-contact-link {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 0.6);
+
+.logo-white {
+  font-family: "Raleway";
   font-style: normal;
-}
-.footer-contact-link:hover {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: #ffffff;
 }
 
+.footer-contact-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+  color: #ffffff;
+}
 /* Portfolio */
 
+/* Portfolio button section */
 .portfolio-button {
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: #212121;
-  background: #f5f4fa;
-  border-radius: 4px;
+  background-color: #f5f4fa;
 }
-.portfolio-title {
-  font-family: "Roboto", sans-serif;
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Portfolio photo section */
+
+.portfolio_title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
+  letter-spacing: 0.06em;
   color: #212121;
 }
+
 .portfolio-text {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
   color: #757575;
-}
-/* Buttons */
-.button,
-.header-contact-link,
-.portfolio-button,
-.main-button {
-  cursor: pointer;
 }
