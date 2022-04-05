@@ -24,8 +24,10 @@ body {
 }
 
 :root {
+  --title-color: #212121;
   --text-color: #757575;
   --accent-color: #2196f3;
+  --white-color: #ffffff;
 }
 .btn {
   cursor: pointer;
@@ -88,7 +90,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .main-button {
@@ -116,6 +118,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--title-color);
 }
 
 .hero-text {
@@ -147,15 +150,16 @@ body {
   letter-spacing: 0.03em;
 }
 
-.masters-name {
+.masters-name-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--title-color);
 }
 
-.masters-speciality {
+.masters-speciality-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -179,6 +183,19 @@ body {
   color: #ffffff;
 }
 
+.footer-contact-adress-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+.footer-contact-adress-link:hover,
+.footer-contact-adress-link:focus {
+  color: var(--accent-color);
+}
+
 .footer-contact-link {
   font-style: normal;
   font-weight: 400;
@@ -190,7 +207,7 @@ body {
 
 .footer-contact-link:hover,
 .footer-contact-link:focus {
-  color: #ffffff;
+  color: var(--accent-color);
 }
 /* Portfolio */
 
@@ -213,17 +230,17 @@ body {
 
 /* Portfolio photo section */
 
-.portfolio_title {
+.portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--title-color);
 }
 
 .portfolio-text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
