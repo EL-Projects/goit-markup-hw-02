@@ -77,6 +77,9 @@ body {
 .header-contact-link:focus {
   color: var(--accent-color);
 }
+.header-list .link.current{
+  color: var(--accent-color);
+}
 
 /* Main */
 .main {
