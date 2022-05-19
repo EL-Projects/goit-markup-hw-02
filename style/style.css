@@ -1,3 +1,25 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
@@ -246,4 +268,45 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+/* Container */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: solid 1px tomato;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo {
+  margin-right: 93px;
+}
+.header-list {
+  width: 294px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-contact-list {
+  display: flex;
+  margin-left: auto;
+}
+.header-contact-tel {
+  margin-left: 50px;
+}
+.contacts {
+  display: flex;
 }
